@@ -1,4 +1,6 @@
 # elixir-xmlrpc-client
+[![Build Status](https://travis-ci.org/ciamiz/elixir-xmlrpc-client.svg?branch=master)](https://travis-ci.org/ciamiz/elixir-xmlrpc-client)
+
 
 
 ## Installation
