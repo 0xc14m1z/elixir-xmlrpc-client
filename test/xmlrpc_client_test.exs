@@ -1,6 +1,6 @@
-defmodule XmlrpcClientTest do
+defmodule XMLRPC_ClientTest do
   use ExUnit.Case
-  doctest XmlrpcClient
+  doctest XMLRPC_Client
 
   test "the truth" do
     assert 1 + 1 == 2
