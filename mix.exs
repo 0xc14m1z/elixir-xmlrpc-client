@@ -7,7 +7,8 @@ defmodule XmlrpcClient.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps,
+     preferred_cli_env: [espec: :test]]
   end
 
   def application do
