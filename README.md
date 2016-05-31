@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # elixir-xmlrpc-client
-
 
 
 ## Installation
@@ -18,6 +16,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
         def application do
           [applications: [:xmlrpc_client]]
         end
-=======
-# elixir-xmlrpc-client
->>>>>>> 0aae7d40329bf8f5e034127f9c7f37df8529882c
