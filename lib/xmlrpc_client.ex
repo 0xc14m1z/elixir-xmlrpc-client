@@ -1,2 +1,3 @@
-defmodule XmlrpcClient do
+defmodule XMLRPC_Client do
+  
 end
