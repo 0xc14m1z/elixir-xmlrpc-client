@@ -17,8 +17,10 @@ defmodule XmlrpcClient.Mixfile do
 
   defp deps do
     [
-      {:httpotion, "~> 2.2.0"},             # manage http requests
-      {:espec, "~> 0.8.21", only: :test}    # test framwork
+      {:httpotion, "~> 2.2.0"},               # manage http requests
+      {:espec, "~> 0.8.21", only: :test},     # test framwork
+      {:erlsom, github: "willemdj/erlsom"},
+      {:xmlrpc, "~> 0.1"}
     ]
   end
 end
