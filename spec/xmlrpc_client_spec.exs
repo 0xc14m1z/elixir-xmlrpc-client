@@ -5,7 +5,7 @@ defmodule XMLRPC_Client_Spec do
   describe ".call" do
     let :server, do: %Server { host: "http://www.advogato.org", path: "XMLRPC" }
     let :method, do: "test.strlen"
-    let :params, do: "example"
+    let :params, do: ["example"]
 
     it "should return a result if the method is implemented" do
       expect(XMLRPC_Client.call(server, method, params)).to be_ok_result
