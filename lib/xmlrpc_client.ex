@@ -1,9 +1,9 @@
 defmodule XMLRPC_Client do
-  alias XMLRPC_Client.Client
+  alias XMLRPC_Client.Server
 
-  def call(client, method_name, params \\ []) when (client != nil and method_name != nil and method_name != "") do
+  def call(server, method_name, params \\ []) when (server != nil and method_name != nil and method_name != "") do
     request_body = %XMLRPC.MethodCall{method_name: method_name, params: params} |> XMLRPC.encode!
-    response = HTTPotion.post(Client.url(client), [body: request_body])
+    response = HTTPotion.post(Server.url(server), [body: request_body])
     response.body |> XMLRPC.decode |> parse_response
   end
 
