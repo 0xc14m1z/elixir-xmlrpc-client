@@ -1,5 +1,5 @@
 defmodule XMLRPC_Client.ServerSpec do
-  alias XMLRPC_Server.Server
+  alias XMLRPC_Client.Server
   use ESpec
 
   describe ".url" do
