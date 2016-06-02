@@ -1,20 +1,19 @@
 # elixir-xmlrpc-client
 [![Build Status](https://travis-ci.org/ciamiz/elixir-xmlrpc-client.svg?branch=master)](https://travis-ci.org/ciamiz/elixir-xmlrpc-client)
 
+Wrapper of Elixir and Erlang libraries to perform XMLRPC calls.
+
 ## Usage
 
-## Installation
+First of all you need to define the server that will handle your remote procedure calls:
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+```elixir
+server = %XMLRPC_Client.Server { host: "www.example.com", path: "xmlrpc", port: 80 }
+```
+The hostname of the server is the only mandatory value.
 
-  1. Add xmlrpc_client to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:xmlrpc_client, "~> 0.0.1"}]
-        end
-
-  2. Ensure xmlrpc_client is started before your application:
-
-        def application do
-          [applications: [:xmlrpc_client]]
-        end
+To call a remote method on the server just use the ```.call``` method:
+```elixir
+XMLRPC_Client.call(server, method_name, parameters)
+```
+The ```parameters``` argument must be a list.
